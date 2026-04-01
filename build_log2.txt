@@ -1,0 +1,81 @@
+﻿
+> web@0.1.0 build C:\my-turborepo\apps\web
+> next build
+
+Γû▓ Next.js 16.2.0 (Turbopack)
+- Environments: .env.local
+
+node.exe : ΓÜá The 
+"middleware" file 
+convention is deprecated. 
+Please use "proxy" 
+instead. Learn more: https
+://nextjs.org/docs/message
+s/middleware-to-proxy
+At C:\Users\krish\AppData\
+Roaming\npm\pnpm.ps1:24 
+char:5
++     & "node$exe"  "$base
+dir/node_modules/pnpm/bin/
+pnpm.cjs" $args
++     ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (Γ  
+  Üá The "middle...lewa   
+ re-to-proxy:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 3.5s
+  Running TypeScript ...
+Failed to type check.
+
+./app/events/[id]/page.tsx
+:155:11
+Type error: Type '{ 
+status: "GOING" | 
+"NOT_GOING"; id?: string 
+| undefined; user_id?: 
+string | undefined; }' is 
+not assignable to type 
+'Rsvp'.
+  Types of property 'id' 
+are incompatible.
+    Type 'string | 
+undefined' is not 
+assignable to type 
+'string'.
+      Type 'undefined' is 
+not assignable to type 
+'string'.
+
+  [90m153 |[0m         
+  [90m154 |[0m         
+[36mif[0m (existingIdx 
+>= [35m0[0m) {
+[31m[1m>[0m [90m155 
+|[0m           
+updated[existingIdx] = { 
+...updated[existingIdx], 
+status: newStatus }
+  [90m    |[0m          
+ [31m[1m^[0m
+  [90m156 |[0m         
+} [36melse[0m {
+  [90m157 |[0m          
+ updated.push({
+  [90m158 |[0m          
+   id: 
+[32m'optimistic-'[0m + 
+[33mDate[0m.now(),
+Next.js build worker 
+exited with code: 1 and 
+signal: null
+C:\my-turborepo\apps\web:
+ΓÇëERR_PNPM_RECURSIVE_RUN_FIRST_FAILΓÇë web@0.1.0 build: `next build`
+Exit status 1

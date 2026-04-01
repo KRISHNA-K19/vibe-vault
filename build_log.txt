@@ -1,0 +1,3231 @@
+﻿
+> web@0.1.0 build C:\my-turborepo\apps\web
+> next build
+
+Γû▓ Next.js 16.2.0 (Turbopack)
+- Environments: .env.local
+
+node.exe : ΓÜá The 
+"middleware" file 
+convention is deprecated. 
+Please use "proxy" 
+instead. Learn more: https
+://nextjs.org/docs/message
+s/middleware-to-proxy
+At C:\Users\krish\AppData\
+Roaming\npm\pnpm.ps1:24 
+char:5
++     & "node$exe"  "$base
+dir/node_modules/pnpm/bin/
+pnpm.cjs" $args
++     ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (Γ  
+  Üá The "middle...lewa   
+ re-to-proxy:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  Creating an optimized production build ...
+Turbopack build 
+encountered 1 warnings:
+./apps/web/app/contact/pag
+e.tsx:58:42
+Module not found: Can't 
+resolve 
+'@/app/actions/email'
+  [90m56 |[0m     
+[90m// 2. Send real-time 
+email notification to 
+admin via Resend[0m
+  [90m57 |[0m     
+[36mtry[0m {
+[31m[1m>[0m [90m58 
+|[0m       
+[36mconst[0m { 
+sendContactEmail } = 
+[36mawait[0m [36mimport
+[0m([32m'@/app/actions/e
+mail'[0m)
+  [90m   |[0m           
+                          
+     [31m[1m^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^[0m
+  [90m59 |[0m       
+[36mawait[0m sendContact
+Email(data.name, 
+data.email, data.message)
+  [90m60 |[0m     } 
+[36mcatch[0m (emailErr) 
+{
+  [90m61 |[0m       cons
+ole.error([32m'Contact 
+email failed (message was 
+still saved):'[0m, 
+emailErr)
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+
+> Build error occurred
+Error: Turbopack build 
+failed with 45 errors:
+./apps/web/app/(admin)/cre
+ate-event/page.tsx:14:1
+Module not found: Can't 
+resolve 
+'@/app/actions/events'
+  [90m12 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m13 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+[31m[1m>[0m [90m14 
+|[0m [36mimport[0m { 
+createEventAction } 
+[36mfrom[0m [32m'@/app/
+actions/events'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^[0m
+  [90m15 |[0m 
+[36mimport[0m { 
+[33mUploadCloudIcon[0m, 
+[33mImageIcon[0m, 
+[33mXIcon[0m, [33mCheck
+Circle2Icon[0m, 
+[33mLoader2Icon[0m } 
+[36mfrom[0m 
+[32m'lucide-r...[0m
+  [90m16 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+  [90m17 |[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(dashboard)
+/dashboard/page.tsx:7:1
+Module not found: Can't 
+resolve 
+'@/components/event-card'
+  [90m 5 |[0m 
+[36mimport[0m { 
+useQuery, useQueryClient 
+} [36mfrom[0m [32m'@tan
+stack/react-query'[0m
+  [90m 6 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/card'[0m
+[31m[1m>[0m [90m 7 
+|[0m [36mimport[0m { 
+[33mEventCard[0m } 
+[36mfrom[0m [32m'@/comp
+onents/event-card'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+[33mCalendarIcon[0m, 
+[33mUsersIcon[0m, [33mC
+heckCircle2Icon[0m, 
+[33mPlusIcon[0m, 
+[33mCompassIcon[0m, 
+[33mSettingsIcon[0m, 
+[33mM...[0m
+  [90m 9 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+  [90m10 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/events/page
+.tsx:5:1
+Module not found: Can't 
+resolve 
+'@/components/event-card'
+  [90m3 |[0m 
+[36mimport[0m { 
+useEffect } [36mfrom[0m 
+[32m'react'[0m
+  [90m4 |[0m 
+[36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+[31m[1m>[0m [90m5 
+|[0m [36mimport[0m { 
+[33mEventCard[0m } 
+[36mfrom[0m [32m'@/comp
+onents/event-card'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0
+m
+  [90m6 |[0m 
+[36mimport[0m { 
+useQuery, useQueryClient 
+} [36mfrom[0m [32m'@tan
+stack/react-query'[0m
+  [90m7 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+  [90m8 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/events/
+page.tsx [Client 
+Component Browser]
+    ./apps/web/app/events/
+page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/events/
+page.tsx [Client 
+Component SSR]
+    ./apps/web/app/events/
+page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(admin)/man
+age-events/page.tsx:11:1
+Module not found: Can't 
+resolve 
+'@/components/ui/avatar'
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardContent[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/card'[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+[31m[1m>[0m [90m11 
+|[0m [36mimport[0m { 
+[33mAvatar[0m, 
+[33mAvatarFallback[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/avatar'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mPencilIcon[0m, 
+[33mTrash2Icon[0m, 
+[33mPlusIcon[0m, 
+[33mImage[0m 
+[36mas[0m 
+[33mImageIcon[0m, 
+[33mUsersIcon[0m, [33mC
+hevronDownIcon[0m,.[33m.
+.[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+  [90m14 |[0m 
+[36mimport[0m { 
+useRouter } [36mfrom[0m 
+[32m'next/navigation'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/events/[id]
+/page.tsx:12:1
+Module not found: Can't 
+resolve 
+'@/components/ui/avatar'
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/card'[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+[31m[1m>[0m [90m12 
+|[0m [36mimport[0m { 
+[33mAvatar[0m, 
+[33mAvatarFallback[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/avatar'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+  [90m14 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m15 |[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(admin)/cre
+ate-event/page.tsx:10:1
+Module not found: Can't 
+resolve 
+'@/components/ui/button'
+  [90m 8 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui...[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+[31m[1m>[0m [90m10 
+|[0m [36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m12 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m13 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(admin)/man
+age-events/page.tsx:10:1
+Module not found: Can't 
+resolve 
+'@/components/ui/button'
+  [90m 8 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardContent[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/card'[0m
+[31m[1m>[0m [90m10 
+|[0m [36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mAvatar[0m, 
+[33mAvatarFallback[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/avatar'[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mPencilIcon[0m, 
+[33mTrash2Icon[0m, 
+[33mPlusIcon[0m, 
+[33mImage[0m 
+[36mas[0m 
+[33mImageIcon[0m, 
+[33mUsersIcon[0m, [33mC
+hevronDownIcon[0m,.[33m.
+.[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/logi
+n/page.tsx:11:1
+Module not found: Can't 
+resolve 
+'@/components/ui/button'
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardFooter[0m } 
+[36mfrom[0m 
+[32m'@/c...[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+[31m[1m>[0m [90m11 
+|[0m [36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m14 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/sign
+up/page.tsx:11:1
+Module not found: Can't 
+resolve 
+'@/components/ui/button'
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardFooter[0m } 
+[36mfrom[0m 
+[32m'@/c...[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+[31m[1m>[0m [90m11 
+|[0m [36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m14 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(dashboard)
+/dashboard/page.tsx:11:1
+Module not found: Can't 
+resolve 
+'@/components/ui/button'
+  [90m 9 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+  [90m10 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+[31m[1m>[0m [90m11 
+|[0m [36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+useEffect } [36mfrom[0m 
+[32m'react'[0m
+  [90m13 |[0m
+  [90m14 |[0m 
+[36mexport[0m 
+[36mdefault[0m 
+[36mfunction[0m 
+[33mDashboardPage[0m() {
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/contact/pag
+e.tsx:10:1
+Module not found: Can't 
+resolve 
+'@/components/ui/button'
+  [90m 8 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui...[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+[31m[1m>[0m [90m10 
+|[0m [36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mTextarea[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/textarea'[0m
+  [90m13 |[0m 
+[36mimport[0m { 
+[33mMailIcon[0m, [33mMe
+ssageSquareIcon[0m, 
+[33mSendIcon[0m, 
+[33mUserIcon[0m, 
+[33mMapPinIcon[0m, 
+[33mPhoneIcon[0m, 
+[33mCheckCirc...[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/events/[id]
+/page.tsx:11:1
+Module not found: Can't 
+resolve 
+'@/components/ui/button'
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCalendarIcon[0m, 
+[33mUsersIcon[0m, [33mC
+heckCircle2Icon[0m, 
+[33mXCircleIcon[0m, 
+[33mArrowLeftIcon[0m, 
+[33mLoader2Ico.[0m..
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/card'[0m
+[31m[1m>[0m [90m11 
+|[0m [36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mAvatar[0m, 
+[33mAvatarFallback[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/avatar'[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+  [90m14 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/events/page
+.tsx:9:1
+Module not found: Can't 
+resolve 
+'@/components/ui/button'
+  [90m 7 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+[31m[1m>[0m [90m 9 
+|[0m [36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m11 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mPlusIcon[0m, 
+[33mSearchIcon[0m, 
+[33mCalendarDaysIcon[0m 
+} [36mfrom[0m 
+[32m'lucide-react'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/events/
+page.tsx [Client 
+Component Browser]
+    ./apps/web/app/events/
+page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/events/
+page.tsx [Client 
+Component SSR]
+    ./apps/web/app/events/
+page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/manifesto/p
+age.tsx:4:1
+Module not found: Can't 
+resolve 
+'@/components/ui/button'
+  [90m2 |[0m 
+[36mimport[0m { 
+[33mArrowRightIcon[0m } 
+[36mfrom[0m 
+[32m"lucide-react"[0m
+  [90m3 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m"next/link"[0m
+[31m[1m>[0m [90m4 
+|[0m [36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m"@/comp
+onents/ui/button"[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^[0m
+  [90m5 |[0m
+  [90m6 |[0m 
+[36mexport[0m 
+[36mconst[0m metadata = 
+{
+  [90m7 |[0m   title: 
+[32m"Manifesto | 
+ClubHouse"[0m,
+
+
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(admin)/cre
+ate-event/page.tsx:8:1
+Module not found: Can't 
+resolve 
+'@/components/ui/card'
+  [90m 6 |[0m 
+...[36mt[0m { z } 
+[36mfrom[0m 
+[32m'zod'[0m
+  [90m 7 |[0m 
+...[36mt[0m { useRouter 
+} [36mfrom[0m 
+[32m'next/navigation'[0m
+[31m[1m>[0m [90m 8 
+|[0m ...[36mt[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/c...[0m
+  [90m   |[0m    [31m[
+1m^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m 
+...[36mt[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m10 |[0m 
+...[36mt[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m11 |[0m 
+...[36mt[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/logi
+n/page.tsx:9:1
+Module not found: Can't 
+resolve 
+'@/components/ui/card'
+  [90m 7 |[0m 
+...eateClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m 8 |[0m 
+...eRouter } 
+[36mfrom[0m 
+[32m'next/navigation'[0m
+[31m[1m>[0m [90m 9 
+|[0m ...[33mrd[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardFooter[0m } 
+[36mfrom[0m 
+[32m'@/component...[0m
+  [90m   |[0m    [31m[
+1m^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^[0m
+  [90m10 |[0m 
+...[33mput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m11 |[0m 
+...[33mtton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m12 |[0m 
+...[33mbel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/sign
+up/page.tsx:9:1
+Module not found: Can't 
+resolve 
+'@/components/ui/card'
+  [90m 7 |[0m 
+...eateClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m 8 |[0m 
+...eRouter } 
+[36mfrom[0m 
+[32m'next/navigation'[0m
+[31m[1m>[0m [90m 9 
+|[0m ...[33mrd[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardFooter[0m } 
+[36mfrom[0m 
+[32m'@/component...[0m
+  [90m   |[0m    [31m[
+1m^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^[0m
+  [90m10 |[0m 
+...[33mput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m11 |[0m 
+...[33mtton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m12 |[0m 
+...[33mbel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(dashboard)
+/dashboard/page.tsx:6:1
+Module not found: Can't 
+resolve 
+'@/components/ui/card'
+  [90m4 |[0m 
+[36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m5 |[0m 
+[36mimport[0m { 
+useQuery, useQueryClient 
+} [36mfrom[0m [32m'@tan
+stack/react-query'[0m
+[31m[1m>[0m [90m6 
+|[0m [36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/card'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
+[0m
+  [90m7 |[0m 
+[36mimport[0m { 
+[33mEventCard[0m } 
+[36mfrom[0m [32m'@/comp
+onents/event-card'[0m
+  [90m8 |[0m 
+[36mimport[0m { 
+[33mCalendarIcon[0m, 
+[33mUsersIcon[0m, [33mC
+heckCircle2Icon[0m, 
+[33mPlusIcon[0m, 
+[33mCompassIcon[0m, 
+[33mSettingsIcon[0m, 
+[33mMe...[0m
+  [90m9 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/contact/pag
+e.tsx:8:1
+Module not found: Can't 
+resolve 
+'@/components/ui/card'
+  [90m 6 |[0m 
+...[36mt[0m { z } 
+[36mfrom[0m 
+[32m'zod'[0m
+  [90m 7 |[0m 
+...[36mt[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+[31m[1m>[0m [90m 8 
+|[0m ...[36mt[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/c...[0m
+  [90m   |[0m    [31m[
+1m^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^[0m
+  [90m 9 |[0m 
+...[36mt[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m10 |[0m 
+...[36mt[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m11 |[0m 
+...[36mt[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/events/[id]
+/page.tsx:10:1
+Module not found: Can't 
+resolve 
+'@/components/ui/card'
+  [90m 8 |[0m 
+[36mimport[0m { format 
+} [36mfrom[0m 
+[32m'date-fns'[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCalendarIcon[0m, 
+[33mUsersIcon[0m, [33mC
+heckCircle2Icon[0m, 
+[33mXCircleIcon[0m, 
+[33mArrowLeftIcon[0m, 
+[33mLoader2Ico.[0m..
+[31m[1m>[0m [90m10 
+|[0m [36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/card'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mAvatar[0m, 
+[33mAvatarFallback[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/avatar'[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(admin)/cre
+ate-event/page.tsx:9:1
+Module not found: Can't 
+resolve 
+'@/components/ui/input'
+  [90m 7 |[0m 
+[36mimport[0m { 
+useRouter } [36mfrom[0m 
+[32m'next/navigation'[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui...[0m
+[31m[1m>[0m [90m 9 
+|[0m [36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m12 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/logi
+n/page.tsx:10:1
+Module not found: Can't 
+resolve 
+'@/components/ui/input'
+  [90m 8 |[0m 
+[36mimport[0m { 
+useRouter } [36mfrom[0m 
+[32m'next/navigation'[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardFooter[0m } 
+[36mfrom[0m 
+[32m'@/c...[0m
+[31m[1m>[0m [90m10 
+|[0m [36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/sign
+up/page.tsx:10:1
+Module not found: Can't 
+resolve 
+'@/components/ui/input'
+  [90m 8 |[0m 
+[36mimport[0m { 
+useRouter } [36mfrom[0m 
+[32m'next/navigation'[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardFooter[0m } 
+[36mfrom[0m 
+[32m'@/c...[0m
+[31m[1m>[0m [90m10 
+|[0m [36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/contact/pag
+e.tsx:9:1
+Module not found: Can't 
+resolve 
+'@/components/ui/input'
+  [90m 7 |[0m 
+[36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui...[0m
+[31m[1m>[0m [90m 9 
+|[0m [36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mTextarea[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/textarea'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(admin)/cre
+ate-event/page.tsx:11:1
+Module not found: Can't 
+resolve 
+'@/components/ui/label'
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+[31m[1m>[0m [90m11 
+|[0m [36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m12 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m13 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m14 |[0m 
+[36mimport[0m { 
+createEventAction } 
+[36mfrom[0m [32m'@/app/
+actions/events'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/logi
+n/page.tsx:12:1
+Module not found: Can't 
+resolve 
+'@/components/ui/label'
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+[31m[1m>[0m [90m12 
+|[0m [36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m14 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m15 |[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/sign
+up/page.tsx:12:1
+Module not found: Can't 
+resolve 
+'@/components/ui/label'
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+[31m[1m>[0m [90m12 
+|[0m [36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m14 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m15 |[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/contact/pag
+e.tsx:11:1
+Module not found: Can't 
+resolve 
+'@/components/ui/label'
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+[31m[1m>[0m [90m11 
+|[0m [36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^[0m
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mTextarea[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/textarea'[0m
+  [90m13 |[0m 
+[36mimport[0m { 
+[33mMailIcon[0m, [33mMe
+ssageSquareIcon[0m, 
+[33mSendIcon[0m, 
+[33mUserIcon[0m, 
+[33mMapPinIcon[0m, 
+[33mPhoneIcon[0m, 
+[33mCheckCirc...[0m
+  [90m14 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/contact/pag
+e.tsx:12:1
+Module not found: Can't 
+resolve 
+'@/components/ui/textarea'
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+[31m[1m>[0m [90m12 
+|[0m [36mimport[0m { 
+[33mTextarea[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/textarea'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m13 |[0m 
+[36mimport[0m { 
+[33mMailIcon[0m, [33mMe
+ssageSquareIcon[0m, 
+[33mSendIcon[0m, 
+[33mUserIcon[0m, 
+[33mMapPinIcon[0m, 
+[33mPhoneIcon[0m, 
+[33mCheckCirc...[0m
+  [90m14 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+  [90m15 |[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(admin)/man
+age-events/page.tsx:3:1
+Module not found: Can't 
+resolve 
+'@/lib/supabase/client'
+  [90m1 |[0m [32m'use 
+client'[0m
+  [90m2 |[0m
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m4 |[0m 
+[36mimport[0m { 
+useQuery, useMutation, 
+useQueryClient } 
+[36mfrom[0m [32m'@tanst
+ack/react-query'[0m
+  [90m5 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m6 |[0m 
+[36mimport[0m { format 
+} [36mfrom[0m 
+[32m'date-fns'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/logi
+n/page.tsx:7:1
+Module not found: Can't 
+resolve 
+'@/lib/supabase/client'
+  [90m 5 |[0m 
+[36mimport[0m { 
+zodResolver } 
+[36mfrom[0m [32m'@hookf
+orm/resolvers/zod'[0m
+  [90m 6 |[0m 
+[36mimport[0m { z } 
+[36mfrom[0m 
+[32m'zod'[0m
+[31m[1m>[0m [90m 7 
+|[0m [36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
+[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+useRouter } [36mfrom[0m 
+[32m'next/navigation'[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardFooter[0m } 
+[36mfrom[0m 
+[32m'@/c...[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/sign
+up/page.tsx:7:1
+Module not found: Can't 
+resolve 
+'@/lib/supabase/client'
+  [90m 5 |[0m 
+[36mimport[0m { 
+zodResolver } 
+[36mfrom[0m [32m'@hookf
+orm/resolvers/zod'[0m
+  [90m 6 |[0m 
+[36mimport[0m { z } 
+[36mfrom[0m 
+[32m'zod'[0m
+[31m[1m>[0m [90m 7 
+|[0m [36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
+[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+useRouter } [36mfrom[0m 
+[32m'next/navigation'[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m, 
+[33mCardFooter[0m } 
+[36mfrom[0m 
+[32m'@/c...[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(dashboard)
+/dashboard/page.tsx:4:1
+Module not found: Can't 
+resolve 
+'@/lib/supabase/client'
+  [90m2 |[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+[31m[1m>[0m [90m4 
+|[0m [36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m5 |[0m 
+[36mimport[0m { 
+useQuery, useQueryClient 
+} [36mfrom[0m [32m'@tan
+stack/react-query'[0m
+  [90m6 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/card'[0m
+  [90m7 |[0m 
+[36mimport[0m { 
+[33mEventCard[0m } 
+[36mfrom[0m [32m'@/comp
+onents/event-card'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/contact/pag
+e.tsx:7:1
+Module not found: Can't 
+resolve 
+'@/lib/supabase/client'
+  [90m 5 |[0m 
+[36mimport[0m { 
+zodResolver } 
+[36mfrom[0m [32m'@hookf
+orm/resolvers/zod'[0m
+  [90m 6 |[0m 
+[36mimport[0m { z } 
+[36mfrom[0m 
+[32m'zod'[0m
+[31m[1m>[0m [90m 7 
+|[0m [36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^
+[0m
+  [90m 8 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardDescription[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui...[0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mInput[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/input'[0m
+  [90m10 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/contact
+/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/contact
+/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/events/[id]
+/page.tsx:3:1
+Module not found: Can't 
+resolve 
+'@/lib/supabase/client'
+  [90m1 |[0m [32m'use 
+client'[0m
+  [90m2 |[0m
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m4 |[0m 
+[36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m5 |[0m 
+[36mimport[0m { 
+useParams, useRouter } 
+[36mfrom[0m 
+[32m'next/navigation'[0m
+  [90m6 |[0m 
+[36mimport[0m { 
+useQuery, useMutation, 
+useQueryClient } 
+[36mfrom[0m [32m'@tanst
+ack/react-query'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/events/page
+.tsx:4:1
+Module not found: Can't 
+resolve 
+'@/lib/supabase/client'
+  [90m2 |[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+useEffect } [36mfrom[0m 
+[32m'react'[0m
+[31m[1m>[0m [90m4 
+|[0m [36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m5 |[0m 
+[36mimport[0m { 
+[33mEventCard[0m } 
+[36mfrom[0m [32m'@/comp
+onents/event-card'[0m
+  [90m6 |[0m 
+[36mimport[0m { 
+useQuery, useQueryClient 
+} [36mfrom[0m [32m'@tan
+stack/react-query'[0m
+  [90m7 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/events/
+page.tsx [Client 
+Component Browser]
+    ./apps/web/app/events/
+page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/events/
+page.tsx [Client 
+Component SSR]
+    ./apps/web/app/events/
+page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/gallery/pag
+e.tsx:3:1
+Module not found: Can't 
+resolve 
+'@/lib/supabase/client'
+  [90m1 |[0m [32m'use 
+client'[0m
+  [90m2 |[0m
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m4 |[0m 
+[36mimport[0m { 
+useQuery } [36mfrom[0m 
+[32m'@tanstack/react-query
+'[0m
+  [90m5 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+  [90m6 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/gallery
+/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/gallery
+/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/gallery
+/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/gallery
+/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/middleware.ts:2
+:1
+Module not found: Can't 
+resolve '@/lib/supabase/mi
+ddleware'
+  [90m1 |[0m 
+[36mimport[0m { 
+[36mtype[0m 
+[33mNextRequest[0m } 
+[36mfrom[0m 
+[32m'next/server'[0m
+[31m[1m>[0m [90m2 
+|[0m [36mimport[0m { 
+updateSession } 
+[36mfrom[0m [32m'@/lib/
+supabase/middleware'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^[0m
+  [90m3 |[0m
+  [90m4 |[0m 
+[36mexport[0m 
+[36masync[0m 
+[36mfunction[0m 
+middleware(request: 
+[33mNextRequest[0m) {
+  [90m5 |[0m   
+[36mreturn[0m 
+[36mawait[0m 
+updateSession(request)
+
+
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(admin)/cre
+ate-event/page.tsx:13:1
+Module not found: Can't 
+resolve 
+'@/store/useUserStore'
+  [90m11 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m12 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+[31m[1m>[0m [90m13 
+|[0m [36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m14 |[0m 
+[36mimport[0m { 
+createEventAction } 
+[36mfrom[0m [32m'@/app/
+actions/events'[0m
+  [90m15 |[0m 
+[36mimport[0m { 
+[33mUploadCloudIcon[0m, 
+[33mImageIcon[0m, 
+[33mXIcon[0m, [33mCheck
+Circle2Icon[0m, 
+[33mLoader2Icon[0m } 
+[36mfrom[0m 
+[32m'lucide-r...[0m
+  [90m16 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/create-event/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(admin)/man
+age-events/page.tsx:5:1
+Module not found: Can't 
+resolve 
+'@/store/useUserStore'
+  [90m3 |[0m 
+[36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m4 |[0m 
+[36mimport[0m { 
+useQuery, useMutation, 
+useQueryClient } 
+[36mfrom[0m [32m'@tanst
+ack/react-query'[0m
+[31m[1m>[0m [90m5 
+|[0m [36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0
+m
+  [90m6 |[0m 
+[36mimport[0m { format 
+} [36mfrom[0m 
+[32m'date-fns'[0m
+  [90m7 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m8 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(admin)
+/manage-events/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/logi
+n/page.tsx:14:1
+Module not found: Can't 
+resolve 
+'@/store/useUserStore'
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+[31m[1m>[0m [90m14 
+|[0m [36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m15 |[0m
+  [90m16 |[0m 
+[36mconst[0m 
+loginSchema = z.object({
+  [90m17 |[0m   email: 
+z.string().email(),
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+login/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+login/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(auth)/sign
+up/page.tsx:14:1
+Module not found: Can't 
+resolve 
+'@/store/useUserStore'
+  [90m12 |[0m 
+[36mimport[0m { 
+[33mLabel[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/label'[0m
+  [90m13 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+[31m[1m>[0m [90m14 
+|[0m [36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m15 |[0m
+  [90m16 |[0m 
+[36mconst[0m 
+signupSchema = z.object({
+  [90m17 |[0m   email: 
+z.string().email(),
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/(auth)/
+signup/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/(auth)/
+signup/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/(dashboard)
+/dashboard/page.tsx:3:1
+Module not found: Can't 
+resolve 
+'@/store/useUserStore'
+  [90m1 |[0m [32m'use 
+client'[0m
+  [90m2 |[0m
+[31m[1m>[0m [90m3 
+|[0m [36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0
+m
+  [90m4 |[0m 
+[36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+  [90m5 |[0m 
+[36mimport[0m { 
+useQuery, useQueryClient 
+} [36mfrom[0m [32m'@tan
+stack/react-query'[0m
+  [90m6 |[0m 
+[36mimport[0m { 
+[33mCard[0m, 
+[33mCardContent[0m, 
+[33mCardHeader[0m, 
+[33mCardTitle[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/card'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component Browser]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+  Client Component SSR:
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Client Component SSR]
+    ./apps/web/app/(dashbo
+ard)/dashboard/page.tsx 
+[Server Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/events/[id]
+/page.tsx:4:1
+Module not found: Can't 
+resolve 
+'@/store/useUserStore'
+  [90m2 |[0m
+  [90m3 |[0m 
+[36mimport[0m { 
+createClient } 
+[36mfrom[0m [32m'@/lib/
+supabase/client'[0m
+[31m[1m>[0m [90m4 
+|[0m [36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m  |[0m [31m[1m^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^[0
+m
+  [90m5 |[0m 
+[36mimport[0m { 
+useParams, useRouter } 
+[36mfrom[0m 
+[32m'next/navigation'[0m
+  [90m6 |[0m 
+[36mimport[0m { 
+useQuery, useMutation, 
+useQueryClient } 
+[36mfrom[0m [32m'@tanst
+ack/react-query'[0m
+  [90m7 |[0m 
+[36mimport[0m { 
+useEffect, useState } 
+[36mfrom[0m 
+[32m'react'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component Browser]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/events/
+[id]/page.tsx [Client 
+Component SSR]
+    ./apps/web/app/events/
+[id]/page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+./apps/web/app/events/page
+.tsx:8:1
+Module not found: Can't 
+resolve 
+'@/store/useUserStore'
+  [90m 6 |[0m 
+[36mimport[0m { 
+useQuery, useQueryClient 
+} [36mfrom[0m [32m'@tan
+stack/react-query'[0m
+  [90m 7 |[0m 
+[36mimport[0m 
+[36mtype[0m { 
+[33mEvent[0m } 
+[36mfrom[0m 
+[32m'@/types/schema'[0m
+[31m[1m>[0m [90m 8 
+|[0m [36mimport[0m { 
+useUserStore } 
+[36mfrom[0m [32m'@/stor
+e/useUserStore'[0m
+  [90m   |[0m [31m[1m^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^[
+0m
+  [90m 9 |[0m 
+[36mimport[0m { 
+[33mButton[0m } 
+[36mfrom[0m [32m'@/comp
+onents/ui/button'[0m
+  [90m10 |[0m 
+[36mimport[0m 
+[33mLink[0m 
+[36mfrom[0m 
+[32m'next/link'[0m
+  [90m11 |[0m 
+[36mimport[0m 
+[33mImage[0m 
+[36mfrom[0m 
+[32m'next/image'[0m
+
+
+
+Import traces:
+  Client Component 
+Browser:
+    ./apps/web/app/events/
+page.tsx [Client 
+Component Browser]
+    ./apps/web/app/events/
+page.tsx [Server 
+Component]
+
+  Client Component SSR:
+    ./apps/web/app/events/
+page.tsx [Client 
+Component SSR]
+    ./apps/web/app/events/
+page.tsx [Server 
+Component]
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+
+    at <unknown> (./apps/w
+eb/app/(admin)/create-even
+t/page.tsx:14:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(dashboard)/dashboa
+rd/page.tsx:7:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/events/page.tsx:5:1
+)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(admin)/manage-even
+ts/page.tsx:11:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/events/[id]/page.ts
+x:12:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(admin)/create-even
+t/page.tsx:10:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(admin)/manage-even
+ts/page.tsx:10:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/login/page.t
+sx:11:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/signup/page.
+tsx:11:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(dashboard)/dashboa
+rd/page.tsx:11:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/contact/page.tsx:10
+:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/events/[id]/page.ts
+x:11:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/events/page.tsx:9:1
+)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/manifesto/page.tsx:
+4:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(admin)/create-even
+t/page.tsx:8:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/login/page.t
+sx:9:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/signup/page.
+tsx:9:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(dashboard)/dashboa
+rd/page.tsx:6:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/contact/page.tsx:8:
+1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/events/[id]/page.ts
+x:10:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(admin)/create-even
+t/page.tsx:9:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/login/page.t
+sx:10:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/signup/page.
+tsx:10:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/contact/page.tsx:9:
+1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(admin)/create-even
+t/page.tsx:11:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/login/page.t
+sx:12:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/signup/page.
+tsx:12:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/contact/page.tsx:11
+:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/contact/page.tsx:12
+:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(admin)/manage-even
+ts/page.tsx:3:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/login/page.t
+sx:7:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/signup/page.
+tsx:7:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(dashboard)/dashboa
+rd/page.tsx:4:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/contact/page.tsx:7:
+1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/events/[id]/page.ts
+x:3:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/events/page.tsx:4:1
+)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/gallery/page.tsx:3:
+1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/middleware.ts:2:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(admin)/create-even
+t/page.tsx:13:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(admin)/manage-even
+ts/page.tsx:5:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/login/page.t
+sx:14:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(auth)/signup/page.
+tsx:14:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/(dashboard)/dashboa
+rd/page.tsx:3:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/events/[id]/page.ts
+x:4:1)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+    at <unknown> (./apps/w
+eb/app/events/page.tsx:8:1
+)
+    at <unknown> (https://
+nextjs.org/docs/messages/m
+odule-not-found)
+C:\my-turborepo\apps\web:
+ΓÇëERR_PNPM_RECURSIVE_RUN_FIRST_FAILΓÇë web@0.1.0 build: `next build`
+Exit status 1
